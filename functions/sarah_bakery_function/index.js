@@ -7,9 +7,9 @@ const tableName = 'bakery'; // The table created in the Data Store
 const columnName = 'FirstName'; // The column created in the table
 
 // The POST API that reports the alien encounter for a particular city
-app.post('/alien', (req, res) => {
- var fnameJson = req.body.fname;
-console.log(cityJson);
+//app.post('/alien', (req, res) => {
+ //var fnameJson = req.body.fname;
+//console.log(cityJson);
  
  // Initializing Catalyst SDK
  var catalystApp = catalyst.initialize(req);
