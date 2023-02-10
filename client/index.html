@@ -69,11 +69,38 @@ hr{
 }
 
 </style>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shara's Bakery</title>
+  <script>
+  function validateForm() {
+    let x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+    return false;
+    }
+
+    let y = document.forms["myForm"]["lname"].value;
+    if (y == "") {
+      alert("Last Name must be filled out");
+    return false;}
+
+    let z = document.forms["myForm"]["emname"].value;
+    if (z == "") {
+      alert("Email must be filled out");
+    return false;}
+
+    let a = document.forms["myForm"]["Pnname"].value;
+    if (a == "") {
+      alert("Phone Number must be filled out");
+    return false;
+    }
+}
+</script>
 </head>
+
 <body>  
   <div class="top-box" id="h">
     <h1 class="B"><i>Shara's Bakery</i><br></h1>
@@ -152,7 +179,7 @@ hr{
 </div></center>
 <br>
 <br>
-<form id="form1"><center>
+<form id="form1" name="myForm" onsubmit="return validateForm()"><center>
   <label>First name:</label><br>
   <input type="text" id="fname" name="fname"><br><br>
 
@@ -169,7 +196,8 @@ hr{
 <center>
 <button type="submit bu" form="form1" value="Submit" style="background-color:green">Submit</button>
 <button type="reset" form="form1" value="Reset">Reset</button>
-</div>
+
 </center>
+</div>
 </body>
 </html>
