@@ -1,133 +1,162 @@
 <!DOCTYPE html>
 <html>
-    <style type="text/css">
-        body{
-            background-image: url('https://img.freepik.com/free-photo/frame-food-ingredients-baking-gently-pink-pastel-background-cooking-flat-lay-with-copy-space-top-view-baking-concept-flat-lay_127032-2200.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        }
-    </style>
-    <style>
-    * {
-      box-sizing: border-box;
-    }
-    
-      
-    .column {
-      float: left;
-      width: 33%;
-      padding: 1px;
-    }
-    
-    /* Clearfix (clear floats) */
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-    
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-      width: 100%;
-    }
-    
-    th, td {
-      text-align: left;
-      padding: 10px;
-    }
-    h1{
-        font-size: '100px';
-        font-style: italic;
-        text-align: center;
-    }
-    hr{
-        color: black;
-    }
-    
-    </style>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>sarahbkry</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
+<style type="text/css">
+  #bgi{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxThAn-b_nLF4McP15Jit2uVYfpSXVd16UQg&usqp=CAU');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+ #h{
+  background-color: #ffc0cb;
+  background-image: url('data:image/jpeg;base64,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');
+ }
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-<body>
-  <div class="top-box">
+  
+.column {
+  float: left;
+  width: 33%;
+  padding: 1px;
+  align-content: center;
+  align-items: center;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding-left: 80px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+}
+h1{
+  font-size: '100px';
+  font-style: italic;
+  text-align: center;
+
+}
+hr{
+  color: black;
+}
+
+</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shara's Bakery</title>
+</head>
+<body>  
+  <div class="top-box" id="h">
     <h1 class="B"><i>Shara's Bakery</i><br></h1>
-    <h4><p><center>Estancia IT Park,Vallancherry,</br>Plot No. 140 & 151, Grand Southern Trunk Rd,</br>Chengalpattu, Tamil Nadu 603202</center></p></h4>
-    <!--<center><p style="font-size:100px"><i>Shara's Bakery</i></p></center>-->
-    <!--<marquee>Butter made better<marquee>-->
-    
-    </div>
+    <h4><p><center><i>Estancia IT Park,Vallancherry,</br>Plot No. 140 & 151, Grand Southern Trunk Rd,</br>Chengalpattu, Tamil Nadu 603202<br><br>Contact no: 9876543211</i></center></p></h4>
+  
+  
+  <!--<center><p style="font-size:100px"><i>Shara's Bakery</i></p></center>-->
+  <!--<marquee>Butter made better<marquee>-->
+  
+  </div>
+  <div  id="bgi">
     <hr color="black">
     <br>
-    <div class="row">
-    <div class="column">
-      <table>
-        <tr>
-          <th>Cakes</th>
-          <th></th>
-        </tr>
-        <tr>
-          <td>Plain cake</td>
-      <td><b>300</b></td>
-        </tr>
+    <center>
+  <div class="row">
+  <div class="column" >
+    <table>
       <tr>
-      <td>Banana cake</td>
-      <td><b>500</b></td>
+        <th>Cakes</th>
+        <th></th>
       </tr>
-        <tr>
+      <tr>
         <td>Plain cake</td>
-        <td><b>300</b></td>
+    <td style="color: black;"><b><i>300</i></b></td>
       </tr>
-      </table>
-    </div>
-    <div class="column">
-      <table>
-        <tr>
-          <th>Hot Snacks</th>
-          <th></th>
-        </tr>
-        <tr>
-        <td>Veg roll</td>
-        <td><b>40</b></td>
-      </tr>
+    <tr>
+    <td>Banana cake</td>
+    <td><b><i>500</i></b></td>
+    </tr>
       <tr>
-        <td>Mushroom roll</td>
-        <td><b>50</b></td>
-      </tr>
-      <tr>
-        <td>Paneer roll</td>
-        <td><b>50</b></td>
-      </tr>
-      </table>
-    </div>
-    <div class="column">
-      <table>
-        <tr>
-          <th>Drinks</th>
-          <th></th>
-        </tr>
-        <tr>
-          <td>Mojitos</td>
-      <td><b>50</b></td>
-        </tr>
-      <tr>
-      <td>Bluberry</td>
-      <td><b>50</b></td>
-      </tr>
-        <tr>
-        <td>Green Apple</td>
-        <td><b>50</b></td>
-      </tr>
-      </table>
-    </div>
+      <td>Plain cake</td>
+      <td><b><i>300</i></b></td>
+    </tr>
+    </table>
   </div>
-</body>
+  <div class="column">
+    <table>
+      <tr>
+        <th>Hot Snacks</th>
+        <th></th>
+      </tr>
+      <tr>
+      <td>Veg roll</td>
+      <td><b><i>40</i></b></td>
+    </tr>
+    <tr>
+      <td>Mushroom roll</td>
+      <td><b><i>50</i></b></td>
+    </tr>
+    <tr>
+      <td>Paneer roll</td>
+      <td><b><i>50</i></b></td>
+    </tr>
+    </table>
+  </div>
+  <div class="column">
+    <table>
+      <tr>
+        <th>Drinks</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>Mojitos</td>
+    <td><b><i>50</i></b></td>
+      </tr>
+    <tr>
+    <td>Bluberry</td>
+    <td><b><i>50</i></b></td>
+    </tr>
+      <tr>
+      <td>Green Apple</td>
+      <td><b><i>50</i></b></td>
+    </tr>
+    </table>
+  </div>
+</div></center>
+<br>
+<br>
+<form id="form1"><center>
+  <label>First name:</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
 
+  <label>Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+
+  <label>Email ID</label><br>
+  <input type="Email" id="emname" name="emailname"><br><br>
+
+  <label>Phone Number</label><br>
+  <input type="Phone" id="Pnname" name="Phonename"></center>
+</form>
+<br>
+<center>
+<button type="submit" form="form1" value="Submit">Submit</button>
+<button type="reset" form="form1" value="Reset">Reset</button>
+</div>
+</center>
+</body>
 </html>
