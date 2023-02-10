@@ -35,7 +35,7 @@ console.log(cityJson);
    })
   }*/ else { // If the row is present, then a message is sent indicating duplication
    res.send({
-    "message": "Thanks for revisiting again!"
+    "message": "Thanks for revisiting !"
    });
   }
  }).catch(err => {
@@ -52,15 +52,15 @@ app.get('/alien', (req, res) => {
 
  // Queries the Catalyst Data Store table and checks whether a row is present for the given city
  getDataFromCatalystDataStore(catalystApp, city).then(cityDetails => {
-  if (cityDetails.length == 0) {
+  if (fnameDetails.length == 0) {
    res.send({
-    "message": "Hurray! No alien encounters in this city yet!",
-    "signal": "negative"
+    "message": "Welcome to the Shara's Bakery",
+    "signal": "positive"
    });
   } else {
    res.send({
     "message": "Uh oh! Looks like there are aliens in this city!",
-    "signal": "positive"
+    "signal": "negative"
    });
   }
  }).catch(err => {
