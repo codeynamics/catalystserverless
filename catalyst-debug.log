@@ -1,0 +1,31 @@
+[debug] [2023-02-10T04:54:50.811Z] : 
+[debug] [2023-02-10T04:54:50.812Z] : ----------------------------------------------------------------------
+[debug] [2023-02-10T04:54:50.813Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\HARISH JAYARAJ\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2023-02-10T04:54:50.813Z] : CLI Version:  1.13.3
+[debug] [2023-02-10T04:54:50.813Z] : Platform:     win32
+[debug] [2023-02-10T04:54:50.814Z] : Node Version: v18.14.0
+[debug] [2023-02-10T04:54:50.815Z] : Time:         Fri Feb 10 2023 10:24:50 GMT+0530 (India Standard Time)
+[debug] [2023-02-10T04:54:50.815Z] : ----------------------------------------------------------------------
+[debug] [2023-02-10T04:54:50.815Z] : 
+[debug] [2023-02-10T04:54:51.466Z] : > authorizing via signed-in user option
+[debug] [2023-02-10T04:54:51.467Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-02-10T04:54:51.483Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/13267000000004873 
+
+[debug] [2023-02-10T04:54:52.500Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 10 Feb 2023 04:54:51 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=ae3fa4f5-898e-4028-a1b6-4ddf268bfdf1;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=ae3fa4f5-898e-4028-a1b6-4ddf268bfdf1;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-10T04:54:52.513Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/13267000000004873/environment 
+
+[debug] [2023-02-10T04:54:53.725Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 10 Feb 2023 04:54:52 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=5c9cef65-0f72-4e5b-8ac9-cd1ba313ed68;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=5c9cef65-0f72-4e5b-8ac9-cd1ba313ed68;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-10T04:54:53.913Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/13267000000004873/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-02-10T04:54:54.895Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Fri, 10 Feb 2023 04:54:54 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=60362a0a-7c13-40ac-a54e-d6395f90a3e7;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=60362a0a-7c13-40ac-a54e-d6395f90a3e7;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-10T04:54:54.898Z] : unknown eol undefined hence skipping check
+[info] [2023-02-10T04:54:54.951Z] : i server[sarah_bakery_function]: URL : http://localhost:3000/server/sarah_bakery_function/
+[info] [2023-02-10T04:54:54.952Z] : 
+[info] [2023-02-10T04:54:55.100Z] : i client[sarahbkry]: URL : http://localhost:3000/app/
