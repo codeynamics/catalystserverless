@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "targets": [
+      "sarah_bakery_function"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "client"
+  }
+}

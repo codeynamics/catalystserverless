@@ -1,0 +1,10 @@
+{
+	"deployment": {
+		"name": "sarah_bakery_function",
+		"stack": "node16",
+		"type": "advancedio"
+	},
+	"execution": {
+		"main": "index.js"
+	}
+}
