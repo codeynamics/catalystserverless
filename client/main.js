@@ -1,1 +1,6 @@
-// YOUR JAVASCRIPT CODE FOR INDEX.HTML GOES HERE
+$.ajax({
+  url: "/server/sample/", 
+  type: "get",
+  success: function (data) {
+    alert(data);
+    document.getElement
