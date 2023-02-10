@@ -1,9 +1,0 @@
-{
-	"name": "sarah_bakery_function",
-	"version": "1.0.0",
-	"main": "index.js",
-	"author": "201101048@rajalakshmi.edu.in",
-	"dependencies": {
-		"zcatalyst-sdk-node": "latest"
-	}
-}
