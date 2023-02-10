@@ -11,7 +11,7 @@ function postAlienEncounter() {
         type: "post",
         contentType: "application/json",
         data: JSON.stringify({
-            "city_name": city
+            "First_Name": city
         }),
         success: function (data) {
             alert(data.message);
@@ -27,8 +27,8 @@ function postAlienEncounter() {
  */
 function getAlienEncounter() {
     showLoader();
-    var positive = "https://media.giphy.com/media/Y1GYiLui9NHcxVKhdo/giphy.gif";
-    var negative = "https://media.giphy.com/media/fsPcMdeXPxSP6zKxCA/giphy.gif";
+    var negative = "https://media.giphy.com/media/Y1GYiLui9NHcxVKhdo/giphy.gif";
+    var positive = "https://media.giphy.com/media/fsPcMdeXPxSP6zKxCA/giphy.gif";
     var city = $("#city-get-input").val();
 
   // Fires an Ajax call to the URL defined in the index.js function file
@@ -40,9 +40,9 @@ function getAlienEncounter() {
             console.log(data);
             $("#result-text").text("");
             $("#result-text").text(data.message);
-            var imagesrc = negative;
-            if (data.signal == 'positive') {
-                imagesrc = positive;
+            var imagesrc = positive;
+            if (data.signal == 'negative') {
+                imagesrc = negative;
             }
             $("#result-image").html("");
             $("#result-image").html("<img src='" + imagesrc + "' />");
